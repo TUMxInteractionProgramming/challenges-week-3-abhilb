@@ -40,6 +40,11 @@ ul {
     background-color: white;
     /* #3 #channels #bullets removed */
     list-style-type: none;
+    position: absolute;
+    top: 60px;
+    bottom: 72px;
+    overflow: auto;
+    width: 100%;
 }
 
 li {
