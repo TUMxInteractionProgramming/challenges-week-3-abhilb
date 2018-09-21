@@ -66,6 +66,9 @@ li.selected {
 li img {
     /* #4 #middle vertical alignment of icons in the #channels list */
     vertical-align: middle;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
 }
 
 /* TAB BAR */
@@ -141,12 +144,17 @@ li img {
 .message p {
     background-color: white;
     padding: 16px;
+    display: flex;
 }
 
 .message button {
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
+    position: relative;
+    right: -8px;
+    bottom: -8px;
+    align-self: flex-end;
 }
 
 /* #4 left align own #messages using #margins */
