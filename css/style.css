@@ -31,6 +31,10 @@ button, strong {
     height: 60px;   
 }
 
+.appbar a {
+    color: white;
+    text-decoration: none;
+}
 
 /* CHANNELS LIST */
 

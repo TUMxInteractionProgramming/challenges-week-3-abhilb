@@ -21,16 +21,17 @@ $(document).ready(function(){
         }
     })
 
+    
+    function switchChannel(channelName) {
+        console.log("Tuning into channel "  + channelName);
+            
+        $(" #chat h1").html(channelName +
+             ' <small> by <strong><a href="https://map.what3words.com/upgrading.never.helps">upgrading.never.helps</a></strong></small>')
+        
+    }
 });
 
 
-function switchChannel(channelName) {
-    console.log("Tuning into channel "  + channelName);
-        
-    var chatDiv = document.getElementById('chat');
-    var appBar = chatDiv.getElementsByTagName('h1');
-    appBar[0].innerHTML = channelName;
-}
 
 function switchTab() {
     console.log("Switch tab");
