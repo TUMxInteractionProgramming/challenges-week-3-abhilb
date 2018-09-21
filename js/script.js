@@ -21,18 +21,25 @@ $(document).ready(function(){
         }
     })
 
+
+    $(" #emojis-button ").click(function() {
+        console.log("Toggle emojis");
+        $(" #emojis").toggle();
+    });
+
     
-    function switchChannel(channelName) {
-        console.log("Tuning into channel "  + channelName);
-            
-        $(" #chat h1").html(channelName +
-             ' <small> by <strong><a href="https://map.what3words.com/upgrading.never.helps">upgrading.never.helps</a></strong></small>')
-        
-    }
+    
 });
 
-
+function switchChannel(channelName) {
+    console.log("Tuning into channel "  + channelName);
+        
+    $(" #chat h1").html(channelName +
+         ' <small> by <strong><a href="https://map.what3words.com/upgrading.never.helps">upgrading.never.helps</a></strong></small>')
+    
+}
 
 function switchTab() {
     console.log("Switch tab");
 }
+
